@@ -1,0 +1,82 @@
+{
+    "expo": {
+      "name": "ClimateGuardian AI",
+      "slug": "climate-guardian-ai",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/images/icon.png",
+      "userInterfaceStyle": "automatic",
+      "splash": {
+        "image": "./assets/images/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#1976d2"
+      },
+      "assetBundlePatterns": [
+        "**/*"
+      ],
+      "ios": {
+        "supportsTablet": true,
+        "bundleIdentifier": "ai.climateguardian.mobile",
+        "buildNumber": "1.0.0",
+        "infoPlist": {
+          "NSLocationWhenInUseUsageDescription": "This app uses location to provide climate risk information for your area.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "This app uses location to provide climate risk information and emergency alerts for your area.",
+          "NSCameraUsageDescription": "This app uses the camera for AR visualization of climate risks.",
+          "NSMicrophoneUsageDescription": "This app may use the microphone for emergency voice commands.",
+          "UIBackgroundModes": [
+            "location",
+            "background-fetch",
+            "remote-notification"
+          ]
+        }
+      },
+      "android": {
+        "adaptiveIcon": {
+          "foregroundImage": "./assets/images/adaptive-icon.png",
+          "backgroundColor": "#1976d2"
+        },
+        "package": "ai.climateguardian.mobile",
+        "versionCode": 1,
+        "permissions": [
+          "ACCESS_FINE_LOCATION",
+          "ACCESS_COARSE_LOCATION",
+          "ACCESS_BACKGROUND_LOCATION",
+          "CAMERA",
+          "RECORD_AUDIO",
+          "RECEIVE_BOOT_COMPLETED",
+          "WAKE_LOCK",
+          "VIBRATE"
+        ]
+      },
+      "web": {
+        "favicon": "./assets/images/favicon.png",
+        "bundler": "metro"
+      },
+      "plugins": [
+        "expo-location",
+        "expo-notifications",
+        "expo-camera",
+        [
+          "expo-notifications",
+          {
+            "icon": "./assets/images/notification-icon.png",
+            "color": "#1976d2",
+            "sounds": [
+              "./assets/sounds/emergency-alert.wav",
+              "./assets/sounds/notification.wav"
+            ]
+          }
+        ]
+      ],
+      "extra": {
+        "apiBaseUrl": "http://localhost:8000/api/v1",
+        "wsUrl": "ws://localhost:8000",
+        "mapboxToken": "your_mapbox_token",
+        "eas": {
+          "projectId": "climate-guardian-ai-mobile"
+        }
+      },
+      "owner": "climate-guardian-ai"
+    }
+  }
+  
