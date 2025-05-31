@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Allow: /
+
+# Sitemap
+Sitemap: https://dashboard.climateguardian.ai/sitemap.xml
+
+# Crawl-delay for bots
+Crawl-delay: 1
