@@ -1,0 +1,39 @@
+{
+  "network": "localhost",
+  "chainId": "31337",
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "timestamp": "2025-05-31T05:53:34.229Z",
+  "contracts": {
+    "ClimateDataVerification": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "transactionHash": "0x3827190c47f8b762f292b6d973cc42c6aca6fe0ed3fb5b057227f53ddeb27de9",
+      "blockNumber": 1
+    },
+    "ReputationSystem": {
+      "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      "transactionHash": "0xb80c8ca1e35bd4ab775bd188965c8bb10212e740e8e4129f0a31f1117df35ff3",
+      "blockNumber": 2
+    },
+    "EmergencyResponse": {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "transactionHash": "0x40af9e13ce1a57822210ec83665ddb4318301927c11eff9b5e293a37c0dee9e0",
+      "blockNumber": 3
+    }
+  },
+  "roles": {
+    "ClimateDataVerification": {
+      "VALIDATOR_ROLE": "0x21702c8af46127c7fa207f89d0b0a8441bb32959a0ac7df790e9ab1a25c98926",
+      "DATA_PROVIDER_ROLE": "0xb6f6b279a7a4e2aa16012cbd36fcdc1fbdb91b92fd6dab57885c9de496473a8d",
+      "EMERGENCY_RESPONDER_ROLE": "0xbc5e62d12c2ceca70897f1b45b6db8f69577a836114666e7ae0326805e5f9287"
+    },
+    "ReputationSystem": {
+      "REPUTATION_MANAGER_ROLE": "0xa5df84d05f94c8e589750a34f9631c6df369aabc0811ccbbd233872ff60aec66",
+      "VALIDATOR_ROLE": "0x21702c8af46127c7fa207f89d0b0a8441bb32959a0ac7df790e9ab1a25c98926"
+    },
+    "EmergencyResponse": {
+      "EMERGENCY_COORDINATOR_ROLE": "0xf26d847f9c525cc28e936233c67ee4e6f586ba969a2a81baaeaa0534f2e7c363",
+      "RESPONDER_ROLE": "0x4d9863970d41475dce450df64b8c3f5625245716124ab2023150cc6828d194c4",
+      "GOVERNMENT_ROLE": "0xd9d062b29c8756d894f301c5167d214c34d627724cd7fc859ab9329c9330cf51"
+    }
+  }
+}

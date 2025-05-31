@@ -1,0 +1,30 @@
+{
+    "filter_paths": [
+      "node_modules",
+      "test",
+      "scripts"
+    ],
+    "exclude_informational": false,
+    "exclude_low": false,
+    "exclude_medium": false,
+    "exclude_high": false,
+    "exclude_dependencies": true,
+    "json": "slither-report.json",
+    "sarif": "slither-report.sarif",
+    "checklist": true,
+    "markdown": true,
+    "detectors_to_exclude": [
+      "pragma",
+      "solc-version",
+      "low-level-calls",
+      "naming-convention"
+    ],
+    "disable_color": false,
+    "filter_paths_exclude": [],
+    "printers": [
+      "human-summary",
+      "inheritance-graph",
+      "contract-summary"
+    ]
+  }
+  
