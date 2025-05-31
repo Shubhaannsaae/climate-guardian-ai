@@ -1,0 +1,70 @@
+{
+    "name": "climate-guardian-dashboard",
+    "version": "1.0.0",
+    "description": "Government Dashboard for ClimateGuardian AI - Climate Risk Intelligence Platform",
+    "private": true,
+    "dependencies": {
+      "@emotion/react": "^11.11.1",
+      "@emotion/styled": "^11.11.0",
+      "@mui/icons-material": "^5.14.16",
+      "@mui/material": "^5.14.17",
+      "@mui/x-date-pickers": "^6.18.1",
+      "@tanstack/react-query": "^5.8.4",
+      "@tanstack/react-query-devtools": "^5.8.4",
+      "axios": "^1.6.0",
+      "chart.js": "^4.4.0",
+      "chartjs-adapter-date-fns": "^3.0.0",
+      "date-fns": "^2.30.0",
+      "mapbox-gl": "^2.15.0",
+      "notistack": "^3.0.1",
+      "react": "^18.2.0",
+      "react-chartjs-2": "^5.2.0",
+      "react-dom": "^18.2.0",
+      "react-router-dom": "^6.18.0",
+      "socket.io-client": "^4.7.2",
+      "web-vitals": "^3.5.0"
+    },
+    "devDependencies": {
+      "@testing-library/jest-dom": "^6.1.4",
+      "@testing-library/react": "^13.4.0",
+      "@testing-library/user-event": "^14.5.1",
+      "@types/jest": "^29.5.8",
+      "@types/node": "^20.9.0",
+      "@types/react": "^18.2.37",
+      "@types/react-dom": "^18.2.15",
+      "react-scripts": "5.0.1",
+      "typescript": "^4.9.5"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+      "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+      "format": "prettier --write src/**/*.{js,jsx,ts,tsx,json,css,md}",
+      "format:check": "prettier --check src/**/*.{js,jsx,ts,tsx,json,css,md}",
+      "analyze": "npm run build && npx source-map-explorer 'build/static/js/*.js'",
+      "serve": "npx serve -s build -l 3000"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "proxy": "http://localhost:8000"
+  }
+  
